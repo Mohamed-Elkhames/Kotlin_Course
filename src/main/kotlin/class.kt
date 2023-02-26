@@ -4,12 +4,13 @@ fun main(){
     val t1 = Teacher(1646, 32,"Ahmed",1200.20)
     t1.info()
 }
+// this is father
 open class User(var id:Int, var age:Int, var name:String){
     open fun info(){
         println("your ID for your jop is $id")
     }
 }
-
+// this is the child that inhert name , id and age from the perant 
 class Student( id:Int,  age:Int,  name:String , var GBA:Double):User(id,age,name){
     override fun info(){
         println("your ID for your jop is $id")
